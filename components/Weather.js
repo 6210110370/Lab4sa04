@@ -1,19 +1,18 @@
-import React, { useState } from 'react';
-import {ImageBackground, ProgressBarAndroidComponent, StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import {ImageBackground, Text, View, StyleSheet } from 'react-native';
 import Forecast from './Forcast';
 
 export default function Weather(props) {
     const [forecastInfo, setForecastInfo] = useState({
-        main: '-',
-        description: '-',
+        main: 'main',
+        description: 'description',
         temp: 0
-    });
-
+    })
     return (
         <View>
             <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
-                <View style={styles.infor}>
-                    <Text>Zip Code is {props.zipCode}</Text>
+                <View style={styles.contain}>
+                    <Text style={styles.text}>Zip Code is {props.zipCode}</Text>
                     <Forecast {...forecastInfo} />
                 </View>
             </ImageBackground>
@@ -22,17 +21,22 @@ export default function Weather(props) {
 }
 const styles = StyleSheet.create({
     backdrop: {
-        flexDirection:'row',
+        flexDirection: 'row',
         alignItems: 'flex-start',
         width: '100%',
-        height: '100%',
-        
+        height: '100%'
     },
-    infor: {
-        flex:1,
-        backgroundColor: 'rgba(0,0,0,0.4)',
-        alignItems: 'center',
+
+    contain:{
+        flexDirection:'column',
+        alignItems:'center',
+        backgroundColor: 'rgba(52, 52, 52, 0.5)',
+        width: '100%',
+        padding: 30
+    },
+
+    text:{
         color: 'white',
-        color: 'red'
     },
+
 });
