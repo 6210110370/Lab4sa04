@@ -30,7 +30,9 @@ export default function ZipCodeScreen() {
             <FlatList
                 data={availableZipItems}
                 keyExtractor={_keyExtractor}
-                renderItem={({ item }) => <ZipItem {...item} navigation={navigation}/>}
+                renderItem={({ item }) => 
+                    <ZipItem {...item} navigation={navigation}
+                />}
             />
             <StatusBar style="auto" />
         </View>
