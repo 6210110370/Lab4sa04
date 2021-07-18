@@ -30,11 +30,21 @@ const styles = StyleSheet.create({
     },
     locat: {
         height: '25%',
-        backgroundColor: 'green',
-        width: '80%',
+        backgroundColor: 'rgba(100, 100, 100, 0.6)',
+        width: '100%',
         flexDirection: 'column',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        borderRadius: 5,
+        shadowColor: 'white',
+        shadowOffset: {
+            width: 0,
+            height: 8,
+        },
+        shadowOpacity: 0.44,
+        shadowRadius: 10.32,
+
+        elevation: 16,
     },
     txtCountry : {
         fontSize: 48,
@@ -42,25 +52,34 @@ const styles = StyleSheet.create({
         margin: 30,
         margin: 10,
     },
+    tempText:{
+        flexDirection: 'row',
+        fontSize: 72,
+        color: 'white',
+    },
     weaters: {
-        height: '25%',
-        backgroundColor: 'green',
+        backgroundColor: 'rgba(100, 100, 100, 0.6)',
         width: '80%',
         flexDirection: 'column',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingBottom: 10
+        paddingBottom: 10,
+        borderRadius: 5,
+        shadowColor: 'white',
+        shadowOffset: {
+            width: 0,
+            height: 8,
+        },
+        shadowOpacity: 0.44,
+        shadowRadius: 10.32,
+
+        elevation: 16,
     },
     mainText:{
         fontSize: 30,
         color: 'white',
     },
     descriptionText:{
-        color: 'white',
-    },
-    tempText:{
-        flexDirection: 'row',
-        fontSize: 72,
         color: 'white',
     },
 
