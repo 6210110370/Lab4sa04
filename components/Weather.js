@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'space-around',
-        backgroundColor: 'rgba(52, 52, 52, 0.8)',
+        backgroundColor: 'rgba(10, 10, 10, 0.6)',
         width: '90%',
         height: '90%',
         padding: 40,
