@@ -3,7 +3,7 @@ import { Text, View, StyleSheet ,Image} from 'react-native';
 
 export default function Forecast(props) {
 
-    const img = 'http://openweathermap.org/img/wn/'+props.icon+'@10x.png'
+    const img = 'http://openweathermap.org/img/wn/'+props.icon+'@4x.png'
     return (
         <View style={styles.textView}>
             <View style={styles.locat}>
