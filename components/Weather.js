@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ImageBackground, Text, View, StyleSheet } from 'react-native';
+import { ImageBackground, View, StyleSheet } from 'react-native';
 import Forecast from './Forcast';
 
 export default function Weather(props) {
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         width: '100%',
         height: '100%'
+
     },
 
     contain: {
@@ -56,6 +57,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-around',
         backgroundColor: 'rgba(10, 10, 10, 0.6)',
+        
         width: '90%',
         height: '80%',
         padding: 40,
